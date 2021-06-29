@@ -4,20 +4,33 @@
   "name": "肉丸陪你每一页",
   "description": "让所有网站都充满肉丸",
   "version": "1.0",
-
-  "permissions": [],
-  "options_page": {
-    "page": "options/index.html"
+  "icons": {
+		"16": "assets/images/meatball.png",
+		"48": "assets/images/meatball.png",
+		"128": "assets/images/meatball.png"
+	},
+  "options_ui": {
+    "page": "options/index.html",
+    "chrome_style": true
   },
   "browser_action": {
+    "default_title": "肉丸陪你每一页",
     "default_icon": "assets/images/meatball.png",
     "default_popup": "options/index.html"
   },
-
+  "web_accessible_resources": [
+    "assets/images/meatball.png"
+  ],
   "content_scripts": [
     {
-        "matches": ["*://*/*", "file://*"],
-        "js": ["content/index.js"]
+      "matches": ["<all_urls>"],
+      "js": ["content/index.js"],
+      "css": ["content/index.css"],
+      "run_at": "document_end"
     }
+  ],
+  "permissions": [
+    "http://*/*",
+		"https://*/*"
   ]
 }
