@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "肉丸陪你每一页",
+  "description": "让所有网站都充满肉丸",
+  "version": "1.0",
+
+  "permissions": [],
+  "options_page": {
+    "page": "options/index.html"
+  },
+  "browser_action": {
+    "default_icon": "assets/images/meatball.png",
+    "default_popup": "options/index.html"
+  },
+
+  "content_scripts": [
+    {
+        "matches": ["*://*/*", "file://*"],
+        "js": ["content/index.js"]
+    }
+  ]
+}

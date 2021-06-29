@@ -1,0 +1,26 @@
+{
+  "name": "surfing_with_meatball",
+  "version": "1.0.0",
+  "description": "让所有网站都充满肉丸",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir crx && cd src && crx pack -o ../crx/surfingWithMeatroll.crx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meatRoll/SURFING_WITH_MEATBALL.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension"
+  ],
+  "author": "meatroll",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/meatRoll/SURFING_WITH_MEATBALL/issues"
+  },
+  "homepage": "https://github.com/meatRoll/SURFING_WITH_MEATBALL#readme",
+  "devDependencies": {
+    "crx": "^5.0.1"
+  }
+}
