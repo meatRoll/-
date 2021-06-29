@@ -7,31 +7,32 @@
   <title>设置</title>
   <style>
     html, body, .wrap {
-      height: 100%;
+      width: 700px;
+      height: 500px;
     }
     body {
       background-color: white;
       background-image: url("../assets/images/meatball.png");
-      background-repeat: round;
+      background-repeat: round round;
     }
     .wrap {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: transparent;
+    }
+    .welcome, .intro {
+      color: white;
       font-weight: 700;
-      line-height: 1vh;
-      background: inherit;
-      -webkit-background-clip: text;
-      background-clip: text;
-      filter: invert(1) grayscale(1) contrast(2);
+      mix-blend-mode: difference;
+      padding: 0;
+      margin: 0;
     }
     .welcome {
-      font-size: 5vw;
+      font-size: 70px;
     }
     .intro {
-      font-size: 3vw;
+      font-size: 36px;
     }
   </style>
 </head>
