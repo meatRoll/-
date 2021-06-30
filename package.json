@@ -4,7 +4,8 @@
   "description": "让所有网站都充满肉丸",
   "main": "index.js",
   "scripts": {
-    "build:crx": "node build/crx"
+    "build:crx": "node build/crx",
+    "build:zip": "node build/zip"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/meatRoll/SURFING_WITH_MEATBALL#readme",
   "devDependencies": {
+    "archiver": "^5.3.0",
     "crx": "^5.0.1"
   }
 }
