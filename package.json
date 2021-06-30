@@ -4,7 +4,7 @@
   "description": "让所有网站都充满肉丸",
   "main": "index.js",
   "scripts": {
-    "build": "mkdir crx && cd src && crx pack -o ../crx/surfingWithMeatroll.crx"
+    "build": "node build"
   },
   "repository": {
     "type": "git",
