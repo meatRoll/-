@@ -4,7 +4,7 @@
   "description": "让所有网站都充满肉丸",
   "main": "index.js",
   "scripts": {
-    "build": "node build"
+    "build:crx": "node build/crx"
   },
   "repository": {
     "type": "git",
